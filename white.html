@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
@@ -88,6 +88,7 @@
   }
   .btn-outline:hover { background: var(--navy); color: #fff; transform: translateY(-2px); }
   .hamburger { display: none; }
+  .hero-right-img { display: block; }
 
   /* ── HERO ── */
   .hero {
@@ -329,6 +330,7 @@
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
     .hero-stats { flex-wrap: wrap; gap: 24px; }
     .badge-strip { gap: 24px; }
+    .hero-right-img { display: none !important; }
   }
 </style>
 </head>
@@ -339,14 +341,7 @@
   <div class="container">
     <div class="header-inner">
       <a href="#" class="logo">
-        <svg class="logo-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="44" height="44" rx="10" fill="url(#wlg1)"/>
-          <polygon points="22,6 28,18 42,18 31,26 35,38 22,30 9,38 13,26 2,18 16,18" fill="url(#wlg2)" opacity="0.95"/>
-          <defs>
-            <linearGradient id="wlg1" x1="0" y1="0" x2="44" y2="44"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#263556"/></linearGradient>
-            <linearGradient id="wlg2" x1="2" y1="6" x2="42" y2="38"><stop stop-color="#f0c040"/><stop offset="1" stop-color="#b8860b"/></linearGradient>
-          </defs>
-        </svg>
+        <img class="logo-icon" src="images/logo.avif" alt="大滿貫娛樂城" style="border-radius:10px;object-fit:cover;width:44px;height:44px;">
         <span class="logo-text">
           大滿貫娛樂城
           <span class="logo-sub">台灣官方娛樂城</span>
@@ -420,6 +415,10 @@
         <div><span class="stat-number">0元</span><span class="stat-label">免下載即玩</span></div>
       </div>
     </div>
+    <!-- Hero image -->
+    <div style="position:absolute;right:0;top:50%;transform:translateY(-50%);width:42%;z-index:1;padding-right:40px;display:none;" class="hero-right-img">
+      <img src="images/hero.avif" alt="大滿貫娛樂城官網" style="width:100%;border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,0.4);display:block;">
+    </div>
   </div>
 </section>
 
@@ -465,43 +464,25 @@
     <div class="card-grid-4">
 
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <polygon points="26,8 32,21 47,21 35,30 39,43 26,34 13,43 17,30 5,21 20,21" fill="url(#wgi1)"/>
-          <defs><linearGradient id="wgi1" x1="5" y1="8" x2="47" y2="43"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>大滿貫娛樂城</h3>
         <p>整合多元線上遊戲的旗艦平台，涵蓋電子遊戲、真人娛樂與體育賽事等豐富內容，提供流暢穩定的操作體驗。</p>
       </div>
 
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <rect x="10" y="14" width="32" height="24" rx="4" fill="none" stroke="url(#wgi2)" stroke-width="2"/>
-          <circle cx="26" cy="26" r="8" fill="url(#wgi2)" opacity="0.5"/>
-          <rect x="18" y="10" width="16" height="4" rx="2" fill="url(#wgi2)"/>
-          <defs><linearGradient id="wgi2" x1="10" y1="10" x2="42" y2="38"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>大滿貫機台</h3>
         <p>每款機台設定不同波動與回饋邏輯，玩家可依自身預算與風格選擇。最熱街機包含風暴賽特和獵龍戰紀3。</p>
       </div>
 
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <ellipse cx="24" cy="26" rx="14" ry="9" fill="none" stroke="url(#wgi3)" stroke-width="2"/>
-          <polygon points="38,26 46,20 46,32" fill="url(#wgi3)"/>
-          <circle cx="18" cy="24" r="2" fill="url(#wgi3)"/>
-          <defs><linearGradient id="wgi3" x1="10" y1="17" x2="46" y2="35"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>大滿貫魚機</h3>
         <p>熱門魚機系列，操作流暢、畫面精緻，帶來刺激暢快的娛樂體驗。適合各種押注預算的玩家輕鬆參與。</p>
       </div>
 
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <rect x="10" y="12" width="14" height="18" rx="3" fill="url(#wgi4)" opacity="0.7"/>
-          <rect x="28" y="12" width="14" height="18" rx="3" fill="url(#wgi4)" opacity="0.5"/>
-          <rect x="19" y="22" width="14" height="18" rx="3" fill="url(#wgi4)"/>
-          <defs><linearGradient id="wgi4" x1="10" y1="12" x2="42" y2="40"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>大滿貫麻將</h3>
         <p>經典大滿貫麻將玩法，結合傳統策略與現代線上體驗，讓喜愛麻將的玩家隨時隨地享受牌局樂趣。</p>
       </div>
@@ -522,20 +503,7 @@
 
       <!-- 風暴賽特 -->
       <div class="game-card">
-        <svg class="game-card-img" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-          <defs><linearGradient id="wmg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a2744"/><stop offset="100%" stop-color="#263556"/></linearGradient></defs>
-          <rect width="400" height="200" fill="url(#wmg1)"/>
-          <rect x="20" y="20" width="360" height="160" rx="8" fill="none" stroke="rgba(240,192,64,0.3)" stroke-width="1"/>
-          <g fill="none" stroke="rgba(240,192,64,0.15)" stroke-width="1">
-            <line x1="92" y1="28" x2="92" y2="172"/>
-            <line x1="164" y1="28" x2="164" y2="172"/>
-            <line x1="236" y1="28" x2="236" y2="172"/>
-            <line x1="308" y1="28" x2="308" y2="172"/>
-          </g>
-          <polygon points="200,40 180,100 200,95 175,165 230,90 205,97 225,40" fill="url(#wmg1g)" opacity="0.9"/>
-          <defs><linearGradient id="wmg1g" x1="175" y1="40" x2="230" y2="165"><stop stop-color="#f0c040"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-          <text x="200" y="190" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(240,192,64,0.6)">5×6 老虎機</text>
-        </svg>
+        <img class='game-card-img' src='images/storm-sette.avif' alt='遊戲機台圖' style='object-fit:cover;'>
         <div class="game-card-body">
           <span class="game-tag">熱門機台</span>
           <h3>風暴賽特</h3>
@@ -550,17 +518,7 @@
 
       <!-- 仙界傳說 -->
       <div class="game-card">
-        <svg class="game-card-img" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-          <defs><linearGradient id="wmg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a2744"/><stop offset="100%" stop-color="#1a3a5c"/></linearGradient></defs>
-          <rect width="400" height="200" fill="url(#wmg2)"/>
-          <ellipse cx="100" cy="100" rx="60" ry="30" fill="rgba(240,192,64,0.05)" stroke="rgba(240,192,64,0.2)" stroke-width="1"/>
-          <ellipse cx="300" cy="80" rx="70" ry="35" fill="rgba(240,192,64,0.05)" stroke="rgba(240,192,64,0.2)" stroke-width="1"/>
-          <polygon points="200,50 210,75 237,75 215,91 223,117 200,101 177,117 185,91 163,75 190,75" fill="url(#wmg2g)" opacity="0.9"/>
-          <circle cx="200" cy="85" r="12" fill="#1a2744"/>
-          <circle cx="200" cy="85" r="6" fill="url(#wmg2g)"/>
-          <defs><linearGradient id="wmg2g" x1="163" y1="50" x2="237" y2="117"><stop stop-color="#f0c040"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-          <text x="200" y="165" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(240,192,64,0.6)">5×5 老虎機</text>
-        </svg>
+        <img class='game-card-img' src='images/storm-sette.avif' alt='遊戲機台圖' style='object-fit:cover;'>
         <div class="game-card-body">
           <span class="game-tag">高倍機台</span>
           <h3>仙界傳說</h3>
@@ -575,18 +533,7 @@
 
       <!-- 魔龍狂怒 -->
       <div class="game-card">
-        <svg class="game-card-img" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-          <defs><linearGradient id="wmg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a2744"/><stop offset="100%" stop-color="#3a1a0a"/></linearGradient></defs>
-          <rect width="400" height="200" fill="url(#wmg3)"/>
-          <path d="M80,140 Q120,80 160,70 Q200,60 220,80 Q260,110 280,90 Q310,70 340,80 Q360,90 380,70" fill="none" stroke="rgba(240,192,64,0.3)" stroke-width="2.5" stroke-linecap="round"/>
-          <polygon points="200,55 218,80 200,105 182,80" fill="url(#wmg3g)" opacity="0.9"/>
-          <polygon points="180,80 200,105 180,130 160,105" fill="url(#wmg3g)" opacity="0.4"/>
-          <polygon points="220,80 240,105 220,130 200,105" fill="url(#wmg3g)" opacity="0.4"/>
-          <circle cx="160" cy="75" r="4" fill="#f0c040"/>
-          <circle cx="240" cy="75" r="4" fill="#f0c040"/>
-          <defs><linearGradient id="wmg3g" x1="160" y1="55" x2="240" y2="130"><stop stop-color="#f0c040"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-          <text x="200" y="165" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(240,192,64,0.6)">3×5 老虎機 · 萬倍以上</text>
-        </svg>
+        <img class='game-card-img' src='images/storm-sette.avif' alt='遊戲機台圖' style='object-fit:cover;'>
         <div class="game-card-body">
           <span class="game-tag">爆分機台</span>
           <h3>魔龍狂怒</h3>
@@ -614,56 +561,32 @@
     </div>
     <div class="card-grid-3">
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <path d="M26 10l4.5 9 9.9 1.4-7.2 7 1.7 9.8L26 32.8l-8.9 4.4 1.7-9.8-7.2-7L21.5 19z" fill="url(#wwi1)"/>
-          <defs><linearGradient id="wwi1" x1="10" y1="10" x2="42" y2="42"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>免下載即玩</h3>
         <p>無需安裝任何程式，透過 LINE 一鍵登入即可立即開始遊戲，支援手機與電腦版同步使用，隨時隨地暢玩。</p>
       </div>
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <rect x="12" y="18" width="28" height="20" rx="4" fill="none" stroke="url(#wwi2)" stroke-width="2"/>
-          <path d="M18 18v-4a8 8 0 0116 0v4" stroke="url(#wwi2)" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="26" cy="28" r="3" fill="url(#wwi2)"/>
-          <defs><linearGradient id="wwi2" x1="12" y1="12" x2="40" y2="38"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>安全合法操作</h3>
         <p>官方客服管理，玩家透過官方機制進行合法操作，避免私下交易風險，保障玩家資產安全。</p>
       </div>
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <path d="M12 36l8-10 6 6 8-12 6 8" stroke="url(#wwi3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <defs><linearGradient id="wwi3" x1="12" y1="24" x2="40" y2="36"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>完整回分機制</h3>
         <p>清楚的回分與活躍度機制，讓玩家在娛樂過程中享有更多回饋，從小額體驗到換台幣流程都有明確說明。</p>
       </div>
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <path d="M26 14a12 12 0 100 24 12 12 0 000-24zm-1 16v-8l6 4-6 4z" fill="url(#wwi4)"/>
-          <defs><linearGradient id="wwi4" x1="14" y1="14" x2="38" y2="38"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>穩定流暢體驗</h3>
         <p>系統穩定、畫面清晰，維護公告透明公開，確保每次更新都能提升遊戲品質與安全性。</p>
       </div>
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <circle cx="20" cy="24" r="8" fill="none" stroke="url(#wwi5)" stroke-width="2"/>
-          <circle cx="32" cy="24" r="8" fill="none" stroke="url(#wwi5)" stroke-width="2"/>
-          <defs><linearGradient id="wwi5" x1="12" y1="16" x2="40" y2="32"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>社群互動機制</h3>
         <p>搭配社群互動機制，讓玩家在體驗遊戲樂趣的同時，享有更多參與感與回饋機會，共同成長。</p>
       </div>
       <div class="card">
-        <svg class="card-icon" viewBox="0 0 52 52" fill="none"><rect width="52" height="52" rx="12" fill="rgba(26,39,68,0.06)"/>
-          <rect x="10" y="14" width="32" height="24" rx="5" fill="none" stroke="url(#wwi6)" stroke-width="2"/>
-          <path d="M10 20h32" stroke="url(#wwi6)" stroke-width="1.5"/>
-          <circle cx="16" cy="17" r="2" fill="url(#wwi6)"/>
-          <circle cx="22" cy="17" r="2" fill="url(#wwi6)"/>
-          <defs><linearGradient id="wwi6" x1="10" y1="14" x2="42" y2="38"><stop stop-color="#1a2744"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-        </svg>
+        <img class='card-icon' src='images/icon2.avif' alt='遊戲圖示' style='object-fit:contain;'>
         <h3>多裝置支援</h3>
         <p>支援 LINE 登入手機與電腦版，免下載即可遊玩，介面清楚、活動資訊透明，隨時隨地輕鬆暢玩。</p>
       </div>
@@ -770,25 +693,7 @@
         </ul>
       </div>
       <div>
-        <svg viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:440px;display:block;margin:0 auto;">
-          <rect width="440" height="380" rx="20" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
-          <!-- Chart -->
-          <rect x="50" y="270" width="40" height="80" rx="4" fill="rgba(26,39,68,0.12)"/>
-          <rect x="110" y="230" width="40" height="120" rx="4" fill="rgba(26,39,68,0.2)"/>
-          <rect x="170" y="170" width="40" height="180" rx="4" fill="rgba(26,39,68,0.3)"/>
-          <rect x="230" y="130" width="40" height="220" rx="4" fill="rgba(26,39,68,0.42)"/>
-          <rect x="290" y="80" width="40" height="270" rx="4" fill="rgba(26,39,68,0.58)"/>
-          <rect x="350" y="40" width="40" height="310" rx="4" fill="url(#wsg1)"/>
-          <path d="M70,270 L130,230 L190,170 L250,130 L310,80 L370,40" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="70" cy="270" r="5" fill="var(--gold)"/>
-          <circle cx="130" cy="230" r="5" fill="var(--gold)"/>
-          <circle cx="190" cy="170" r="5" fill="var(--gold)"/>
-          <circle cx="250" cy="130" r="5" fill="var(--gold)"/>
-          <circle cx="310" cy="80" r="5" fill="var(--gold)"/>
-          <circle cx="370" cy="40" r="7" fill="var(--gold)" stroke="white" stroke-width="2"/>
-          <text x="220" y="362" text-anchor="middle" font-size="13" font-family="sans-serif" fill="var(--text3)">累積活躍度 → 提升回饋比例</text>
-          <defs><linearGradient id="wsg1" x1="350" y1="40" x2="390" y2="350"><stop stop-color="#1a2744"/><stop offset="1" stop-color="rgba(26,39,68,0.2)"/></linearGradient></defs>
-        </svg>
+        <img src="images/small-bet.avif" alt="大滿貫押注策略" style="width:100%;max-width:440px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 8px 24px rgba(26,39,68,0.12);">
       </div>
     </div>
   </div>
@@ -814,11 +719,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
-          <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
-            <rect width="44" height="44" rx="10" fill="rgba(255,255,255,0.1)"/>
-            <polygon points="22,6 28,18 42,18 31,26 35,38 22,30 9,38 13,26 2,18 16,18" fill="url(#wflg)"/>
-            <defs><linearGradient id="wflg" x1="2" y1="6" x2="42" y2="38"><stop stop-color="#f0c040"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs>
-          </svg>
+          <img src="images/logo.avif" alt="大滿貫娛樂城" style="width:36px;height:36px;border-radius:8px;object-fit:cover;">
           <span class="footer-logo-text">大滿貫娛樂城 <span class="footer-logo-sub">台灣官方娛樂城</span></span>
         </div>
         <p>大滿貫娛樂城是一個整合多元線上遊戲的平台，提供流暢穩定的操作體驗，介面清楚、活動資訊透明。</p>
